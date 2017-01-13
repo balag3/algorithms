@@ -3,7 +3,9 @@ package UnionFind;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
-
+/**
+ *Perform trials independent experiments on an n-by-n grid.
+ */
 public class PercolationStats {
     private int n;
     private int trials;
@@ -11,9 +13,8 @@ public class PercolationStats {
     private double[] results;
 
     /**
-     * Perform trials independent experiments on an n-by-n grid
      * @param n size of the grid (n * n)
-     * @param trials number of trials to run
+     * @param trials number of trials to perform
      */
     public PercolationStats(int n, int trials) {
         if (n <= 0) {
